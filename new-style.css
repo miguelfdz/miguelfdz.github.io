@@ -1,0 +1,46 @@
+body {
+  background-color: #4F7B96;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0px;
+  text-align: center;
+  text-shadow: 2px 2px #050505;
+}
+
+img {
+  height: 60%;
+}
+
+a {
+  color: black;
+  text-shadow: none;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#songs {
+  background-color: yellow;
+  display: flex;
+}
+
+.song-item {
+  width: 100px;
+  background-color: #4F7B96;
+  margin: auto;
+  padding: inherit;
+  flex: 50%;
+}
+
+.container {
+  color: white;
+  text-shadow: 2px 2px #050505;
+}
+
+#header {
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=new-style.css.map */
