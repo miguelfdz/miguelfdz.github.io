@@ -27,12 +27,19 @@ hr.solid {
 .sidebar {
     background-color: #0e112c;
     color: #ecf0f1;
+    position: fixed;
     padding: 20px;
     position: sticky;
-    top: 0;
+    top: 40px;
+    overflow-y: auto;
+}
+.card {
+  border: 2px solid #484848;  /* This is a medium gray */
+  padding-top: 30px;
+  margin-top: 60px;
+  border-radius: 20px;  /* Increase as needed */
 }
 .main-content {
-    padding: 20px;
     background-color: #ffffff;
     color: #333;
 }
