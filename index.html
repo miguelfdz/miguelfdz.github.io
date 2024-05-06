@@ -1,38 +1,113 @@
 <!DOCTYPE html>
-<html>
-<title>Metallica</title>
-    <head>
-        <section class="hero is-primary">
-          <div class="hero-body">
-            <div class="container has-background-black	">
-              <a href="index.html">
-                <h1 class="title is-1"> Metallica </h1>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./node_modules/bulma/css/bulma.css">
-        <link rel="stylesheet" type="text/css" href="new-style.css">
-    </head>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Fernández - Professional CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
 <body>
-        <figure class="image is-320x120">
-          <img src="http://www.metalsucks.net/wp-content/uploads/2016/01/metallica-blue-e1426859023101.jpg">
-        </figure>
-
-        <h3 class="subtitle is-4">My Favorite Songs</h3>
-        <div class="columns">
-        <div class="column">
-              <a href="battery_metallica.html">Battery</a>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-4 px-5 sidebar">
+                <!-- Sidebar content -->
+                <div class="profile text-center">
+                    <img src="profile-pic.jpeg" alt="Miguel Fernández">
+                    <h5>Miguel Alejandro Fernández Márquez</h5>
+                    <hr class="solid">
+                </div>
+                <div class="px-4 mb-2">
+                  <p class="text-center">
+                    Ever since the beginning of my
+                    engineering career I’ve had a
+                    passion for UI/UX. I believe this
+                    are key points to have in mind
+                    while the development of a
+                    system, in order to improve the
+                    overall experience of the user.
+                  </p>
+                </div>
+                <div class="px-4 mb-2">
+                  <p class="text-center">
+                    My ambition is to grow
+                    professionally while applying
+                    my current knowledge and
+                    keep learning during the
+                    process.
+                  </p>
+                </div>
+                <div class="px-4 mb-5">
+                  <p class="text-center">
+                    My current interests are 
+                    mobile applications developed in flutter.
+                  </p>
+                </div>
+            </aside>
+            <!-- Main content-->
+            <main class="col-md-8 px-5 my-5 main-content">
+                <!-- Main content -->
+                <section id="experience">
+                  <div class="mb-5">
+                    <span class="section-heading bold">PROFESSIONAL</span><span id="section-2" class="section-heading">EXPERIENCE</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h5>Full Stack Developer at Briq.mx</h5>
+                    <div>(January 2020 - November 2021)</div>
+                  </div>
+                  <p class="mb-5">On this job I was being assigned to different tasks based on sprints, priorities, and the team members skills; Where
+                    we usually split into teams or solo on those tasks, while modifying the code we apply TTD using Rspec to verify
+                    automatically that the expected inputs and outputs are correct, once the tasks were finished, we change the task
+                    status to finished using pivotal tracker, to let the Senior developers or owners of the task review those changes via
+                    GitHub. Every tasks made was headed towards the company's main platform, a WebApp developed in Ruby on
+                    Rails. We followed strictly Scrum work methodology.</p>
+                    <div class="d-flex justify-content-between">
+                      <h5>Full Stack Developer, Professional Practices: at Hold Marketing Digital</h5>
+                      <div>(August 2021 – December 2021)</div>
+                    </div>
+                    <p class="mb-5">During this project, the company was given a problem they wanted to attack which consisted of making 360-
+                      degree evaluations to check if there was any inconveniences the employees had with other employees or
+                      superiors. Based on the technologies my partner and I had and the technologies the company use, we decided to
+                      design the platforms architecture, generally speaking, the developed platform was a Web application made with
+                      CodeIgniter and PHP, a system that follows the work structure of MVC with a MySQL database. The platform
+                      allowed users to have different evaluators depending on the employee's area, if the employee was part of the HR
+                      area he had the role of administrator of the platform, otherwise the employee should only evaluate and be
+                      evaluated.</p>
+                      <div class="d-flex justify-content-between">
+                        <h5>Full Stack Developer, Final Evaluation Project: at Indautosoft</h5>
+                        <div>(January 2022 – May 2022)</div>
+                      </div>
+                      <p class="mb-5">The main problem this company had was that one of his many clients needed a way to verify if the shelves of the
+                        evaluated convenience stores follow a designed planogram, my team and I developed a web application that can
+                        be used responsively on smartphones, allowing evaluators to take a picture to the shelves and get feedback by
+                        Amazon Rekognition’s service called Custom Labels, where an Image recognition model was trained in other to
+                        recognize the products of a planogram and with the given coordinates of the detected labels, check if the detected
+                        products are aligned as the planogram defines.</p>
+                        <div class="d-flex justify-content-between">
+                          <h5>Full Stack Developer, at Narrative Studios</h5>
+                          <div>(September 2022 - May 2024 )</div>
+                        </div>
+                        <h6>Yireh</h6>
+                        <p class="mb-4">
+                          . 
+                        </p>
+                        <h6>Exppedify</h6>
+                        <p class="mb-4">
+                          My main objective in this 
+                        </p>
+                        <h6 class="bold">Cheers by Atoms</h6>
+                        <p class="mb-4">
+                          This was the first application developed using FlutterFlow as our Front-end in the company, the team and I were developing as we were learning how to design and connect
+                          the API we built in PHP Laravel to manage sessions, users, and roles in the platform. The application consisted of a reward system for customers of a Yoga
+                          Studio, where users check-in and get discounts and cash rewards with the accumulated points per activities and visits. All the system was made from start to finish in a lapse of 4 months.
+                        </p>
+              </section>
+            </main>
         </div>
-        <div class="column">
-          <a href="all_nightmare_long_metallica.html">All nightmare long</a>
-        </div>
-        <div class="column">
-          <a href="master_of_puppets_metallica.html">Master of puppets</a>
-        </div>
-        </div>
-    </body>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
