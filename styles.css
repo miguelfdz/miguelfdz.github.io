@@ -43,8 +43,24 @@ hr.solid {
     background-color: #ffffff;
     color: #333;
 }
+#toggleContent {
+  display: block;
+}
+#toggleButton {
+  display: none;
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    #toggleContent {
+      display: none;
+    }
+    #toggleButton {
+      display: block;
+    }
     .sidebar {
         padding-top: 20px;
         padding-bottom: 20px;
