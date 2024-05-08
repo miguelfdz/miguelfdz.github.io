@@ -6,6 +6,7 @@
     <title>Miguel Fernández - Professional CV</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -19,12 +20,120 @@
                         <h5 class="bold">Miguel Alejandro Fernández Márquez</h5>
                         <div class="badge badge-secondary">Software Engineer</div>
                         <div class="badge badge-secondary">UDEM</div>
-                        <hr class="solid">
+                        <hr class="solid mb-3">
                     </div>
                     <div class="center-button">
-                        <button class="btn btn-primary" id="toggleButton">Show More Info <span class="badge badge-light">↓</span></button>
+                        <button class="btn btn-primary mb-2" id="toggleButton">Show Contact Info <span class="badge badge-light">↓</span></button>
                     </div>
-                    <div class="collapse px-4 mb-2" id="toggleContent">
+                    <div class="collapse text-center px-3 mb-2" id="toggleContent">
+                      <ul class="no-bullets">
+                      <li class="info-item">
+                          <span class="info-link">
+                              <i class="fas fa-map-marker-alt"></i>
+                              Monterrey, NL
+                          </span>
+                      </li>
+                      <li class="style-item">
+                          <a href="tel:+528182873016" class="item-link">
+                              <i class="fas fa-phone"></i>
+                              +52 8182873016
+                          </a>
+                      </li>
+                      <li class="info-item">
+                        <span class="info-link">
+                            <i class="fas fa-birthday-cake"></i>
+                            November 15, 1997
+                        </span>
+                      </li>
+                      <li class="style-item">
+                        <a href="mailto:miguelfdzm08@gmail.com" class="item-link">
+                            <i class="fas fa-envelope"></i>
+                            miguelfdzm08@gmail.com
+                        </a>
+                    </li>
+                      </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- Main content-->
+            <main class="col-md-9 main-content">
+                <div class="card text-center py-0">
+                  <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="true">Professional Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- Card content -->
+                  <div class="card-body tab-content">
+                    <div class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                        <div class="mb-4 card-title">
+                          <span class="section-heading bold">PROFESSIONAL</span><span id="section-2" class="section-heading">EXPERIENCE</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="bold">Full Stack Developer at Briq.mx</h5>
+                          <div>(January 2020 - November 2021)</div>
+                        </div>
+                        <p class="mb-5">On this job I was being assigned to different tasks based on sprints, priorities, and the team members skills; Where
+                          we usually split into teams or solo on those tasks, while modifying the code we apply TTD using Rspec to verify
+                          automatically that the expected inputs and outputs are correct, once the tasks were finished, we change the task
+                          status to finished using pivotal tracker, to let the Senior developers or owners of the task review those changes via
+                          GitHub. Every tasks made was headed towards the company's main platform, a WebApp developed in Ruby on
+                          Rails. We followed strictly Scrum work methodology.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="bold">Professional Practices: at Hold Marketing Digital</h5>
+                          <div>(August 2021 – December 2021)</div>
+                        </div>
+                        <p class="mb-5">During this project, the company was given a problem they wanted to attack which consisted of making 360-
+                          degree evaluations to check if there was any inconveniences the employees had with other employees or
+                          superiors. Based on the technologies my partner and I had and the technologies the company use, we decided to
+                          design the platforms architecture, generally speaking, the developed platform was a Web application made with
+                          CodeIgniter and PHP, a system that follows the work structure of MVC with a MySQL database. The platform
+                          allowed users to have different evaluators depending on the employee's area, if the employee was part of the HR
+                          area he had the role of administrator of the platform, otherwise the employee should only evaluate and be
+                          evaluated.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="bold">Final Evaluation Project: at Indautosoft</h5>
+                          <div>(January 2022 – May 2022)</div>
+                        </div>
+                        <p class="mb-5">The main problem this company had was that one of his many clients needed a way to verify if the shelves of the
+                          evaluated convenience stores follow a designed planogram, my team and I developed a web application that can
+                          be used responsively on smartphones, allowing evaluators to take a picture to the shelves and get feedback by
+                          Amazon Rekognition’s service called Custom Labels, where an Image recognition model was trained in other to
+                          recognize the products of a planogram and with the given coordinates of the detected labels, check if the detected
+                          products are aligned as the planogram defines.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="bold">Full Stack Developer, at Narrative Studios</h5>
+                          <div>(September 2022 - May 2024 )</div>
+                        </div>
+                        <h6 class="bold">Yireh & Brokers</h6>
+                        <p class="mb-4">
+                          Yireh is a platform that allows the management of insurance money for the employees of different offices in the company, I applied here the roles and permissions funcionality using Spatie permissions library,
+                          the admin had full controll of the platform, while the contributors had limited access and options to navigate and manipulate the data. Most of my work in this project was front-end oriented, where we used React jsx view components,
+                          and fetch the display data via Axios.
+                        </p>
+                        <h6 class="bold">Exppedify</h6>
+                        <p class="mb-4">
+                          My main duty in this project was to implement and redesign the mailer templates because they were using the default template that provides Laravel,
+                          additionally I worked on the automatic validation via the government API that validates whether the uploaded document is approved or not by the law, the
+                          documents that the user uploades could either be custom specific files or documents for the following organizations: INFONAVIT, IMSS, REPSE and SAT.
+                        </p>
+                        <h6 class="bold">Cheers by Atoms</h6>
+                        <p class="mb-4">
+                          This was the first application developed using FlutterFlow as our Front-end in the company, the team and I were developing as we were learning how to design and connect
+                          the API we built in PHP Laravel to manage sessions, users, and roles in the platform. The application consisted of a reward system for customers of a Yoga
+                          Studio, where users check-in and get discounts and cash rewards with the accumulated points per activities and visits. All the system was made from start to finish in a lapse of 4 months.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                         <p class="text-center">
                           Ever since the beginning of my
                           engineering career I’ve had a
@@ -38,77 +147,11 @@
                         <p class="text-center">
                           My ambition is to grow professionally while building
                           techonological solutions to improve and ease businesses
-                          with their work methods having in mind both functionality and clean designs.
+                          with their work methods.
                         </p>
                       </div>
                     </div>
                 </div>
-            </aside>
-            <!-- Main content-->
-            <main class="col-md-9 main-content">
-                <!-- Main content -->
-                <section id="experience">
-                    <div class="mb-4">
-                      <span class="section-heading bold">PROFESSIONAL</span><span id="section-2" class="section-heading">EXPERIENCE</span>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="bold">Full Stack Developer at Briq.mx</h5>
-                      <div>(January 2020 - November 2021)</div>
-                    </div>
-                    <p class="mb-5">On this job I was being assigned to different tasks based on sprints, priorities, and the team members skills; Where
-                      we usually split into teams or solo on those tasks, while modifying the code we apply TTD using Rspec to verify
-                      automatically that the expected inputs and outputs are correct, once the tasks were finished, we change the task
-                      status to finished using pivotal tracker, to let the Senior developers or owners of the task review those changes via
-                      GitHub. Every tasks made was headed towards the company's main platform, a WebApp developed in Ruby on
-                      Rails. We followed strictly Scrum work methodology.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="bold">Full Stack Developer, Professional Practices: at Hold Marketing Digital</h5>
-                      <div>(August 2021 – December 2021)</div>
-                    </div>
-                    <p class="mb-5">During this project, the company was given a problem they wanted to attack which consisted of making 360-
-                      degree evaluations to check if there was any inconveniences the employees had with other employees or
-                      superiors. Based on the technologies my partner and I had and the technologies the company use, we decided to
-                      design the platforms architecture, generally speaking, the developed platform was a Web application made with
-                      CodeIgniter and PHP, a system that follows the work structure of MVC with a MySQL database. The platform
-                      allowed users to have different evaluators depending on the employee's area, if the employee was part of the HR
-                      area he had the role of administrator of the platform, otherwise the employee should only evaluate and be
-                      evaluated.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="bold">Full Stack Developer, Final Evaluation Project: at Indautosoft</h5>
-                      <div>(January 2022 – May 2022)</div>
-                    </div>
-                    <p class="mb-5">The main problem this company had was that one of his many clients needed a way to verify if the shelves of the
-                      evaluated convenience stores follow a designed planogram, my team and I developed a web application that can
-                      be used responsively on smartphones, allowing evaluators to take a picture to the shelves and get feedback by
-                      Amazon Rekognition’s service called Custom Labels, where an Image recognition model was trained in other to
-                      recognize the products of a planogram and with the given coordinates of the detected labels, check if the detected
-                      products are aligned as the planogram defines.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <h5 class="bold">Full Stack Developer, at Narrative Studios</h5>
-                      <div>(September 2022 - May 2024 )</div>
-                    </div>
-                    <h6 class="bold">Yireh & Brokers</h6>
-                    <p class="mb-4">
-                      Yireh is a platform that allows the management of insurance money for the employees of different offices in the company, I applied here the roles and permissions funcionality using Spatie permissions library,
-                      the admin had full controll of the platform, while the contributors had limited access and options to navigate and manipulate the data. Most of my work in this project was front-end oriented, where we used React jsx view components,
-                      and fetch the display data via Axios.
-                    </p>
-                    <h6 class="bold">Exppedify</h6>
-                    <p class="mb-4">
-                      My main duty in this project was to implement and redesign the mailer templates because they were using the default template that provides Laravel,
-                      additionally I worked on the automatic validation via the government API that validates whether the uploaded document is approved or not by the law, the
-                      documents that the user uploades could either be custom specific files or documents for the following organizations: INFONAVIT, IMSS, REPSE and SAT.
-                    </p>
-                    <h6 class="bold">Cheers by Atoms</h6>
-                    <p class="mb-4">
-                      This was the first application developed using FlutterFlow as our Front-end in the company, the team and I were developing as we were learning how to design and connect
-                      the API we built in PHP Laravel to manage sessions, users, and roles in the platform. The application consisted of a reward system for customers of a Yoga
-                      Studio, where users check-in and get discounts and cash rewards with the accumulated points per activities and visits. All the system was made from start to finish in a lapse of 4 months.
-                    </p>
-                </section>
             </main>
         </div>
     </div>

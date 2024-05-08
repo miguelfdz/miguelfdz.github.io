@@ -4,6 +4,29 @@ body {
 hr.solid {
   border-top: 0.2px solid #10cbd1;
 }
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.card-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.card-body h6 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.card-title {
+  text-align:left;
+}
+.no-bullets {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 .bold {
     font-weight: bold;
 }
@@ -34,9 +57,10 @@ hr.solid {
     overflow-y: auto;
 }
 .card {
-  border: 2px solid #484848;  /* This is a medium gray */
+  border: 1px solid #dddddd;  /* This is a medium gray */
   padding-top: 30px;
   margin-top: 60px;
+  margin-bottom: 60px;
   border-radius: 20px;  /* Increase as needed */
 }
 .main-content {
@@ -52,6 +76,22 @@ hr.solid {
 .center-button {
   display: flex;
   justify-content: center;
+}
+.style-item {
+  color: white; /* White text */
+  list-style-type: none; /* Remove default list bullet */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.item-link {
+  color: white; /* Ensures the text is white */
+  text-decoration: none; /* Removes underline from link */
+  display: flex; /* Aligns the icon and text */
+  align-items: center; /* Center items vertically */
+}
+
+.item-link i {
+  margin-right: 10px; /* Space between the icon and text */
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
